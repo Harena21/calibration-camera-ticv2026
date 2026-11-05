@@ -4,3 +4,5 @@ __pycache__/
 rapport/*.aux
 rapport/*.log
 rapport/*.out
+rapport/*.tex
+rapport/figures/
