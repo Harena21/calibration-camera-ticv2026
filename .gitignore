@@ -1,0 +1,6 @@
+resultats/*
+!resultats/.gitkeep
+__pycache__/
+rapport/*.aux
+rapport/*.log
+rapport/*.out
