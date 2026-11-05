@@ -44,6 +44,8 @@ La matrice $K$ regroupe les paramètres intrinsèques : les focales $f_x$, $f_y$
 
 \section{Chaîne de traitement}
 
+Le code, les 15 photos et les sources de ce rapport sont disponibles sur GitHub : \url{https://github.com/Harena21/calibration-camera-ticv2026}.
+
 Le script \texttt{calibration\_Harena.py} suit le tutoriel OpenCV, avec deux adaptations liées à la taille des images.
 \texttt{findChessboardCorners} est lent sur une image de 24~Mpx. Je cherche donc le damier sur une copie réduite au quart, puis je remets les coordonnées à l'échelle et je les affine au sous-pixel avec \texttt{cornerSubPix} sur l'image pleine résolution, avec une fenêtre de $21\times21$ pixels.
 

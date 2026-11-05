@@ -15,3 +15,6 @@ python calibration_Harena.py
 - focale ≈ 7,05 mm = 0,00705 m (fovx ≈ 55,2°, fovy ≈ 69,7°)
 - distances caméra-damier : ≈ 36,1 / 31,8 / 41,3 cm
 - fichiers créés dans resultats/ : calibration.npz, corrigee.jpg, pose_0.jpg, pose_7.jpg, pose_13.jpg
+
+## Rapport
+rapport/calibrationHarenaVMI2026.pdf (sources LaTeX dans rapport/)
