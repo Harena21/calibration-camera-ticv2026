@@ -14,9 +14,6 @@ CASE = 19.0                # taille d'une case en mm (mesurée à la règle sur 
 # en portrait (images 4284 x 5712) : largeur 6048*1.22 um, hauteur 8064*1.22 um
 CAPTEUR_L, CAPTEUR_H = 7.379, 9.838   # mm
 
-# photos écartées après un premier passage (erreur de reprojection trop forte)
-EXCLURE = ["IMG_3280.jpg"]
-
 # dossier où sont enregistrés les résultats
 RESULTATS = "resultats"
 os.makedirs(RESULTATS, exist_ok=True)
@@ -33,8 +30,6 @@ noms = []
 
 # ---------------- 1. Détection des coins ----------------
 for fichier in sorted(glob.glob("photos/*.jpg")):
-    if os.path.basename(fichier) in EXCLURE:   # marche aussi sous Windows (photos\...)
-        continue
     img = cv2.imread(fichier)
     gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
